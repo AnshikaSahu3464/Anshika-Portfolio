@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anshika Sahu — Python &amp; Backend Developer</title>
+<meta name="theme-color" content="#2d5a3d">
+<meta name="description" content="Anshika Sahu, final-year B.Tech CSIT student in Indore, building backend applications and AI-powered solutions with Python, Django and FastAPI.">
+<meta property="og:title" content="Anshika Sahu — Python &amp; Backend Developer">
+<meta property="og:description" content="Practical backend applications and AI-powered solutions with Python.">
+<meta property="og:type" content="website">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--bg:#fafaf8;--fg:#141414;--mut:#5c5c58;--line:#dce5dc;--card:#fff;--ac:#2d5a3d;--ac-hover:#21462e;--acbg:#e9f1ea;--soft:#f1f6f1;--shadow:0 8px 24px rgba(45,90,61,.07)}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#121713;--fg:#edf3ed;--mut:#b0bdb1;--line:#2c3a2e;--card:#19221b;--ac:#a2d4ad;--ac-hover:#c2e7c9;--acbg:#243b29;--soft:#1b2a1e;--shadow:0 8px 24px rgba(0,0,0,.18)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#121713;--fg:#edf3ed;--mut:#b0bdb1;--line:#2c3a2e;--card:#19221b;--ac:#a2d4ad;--ac-hover:#c2e7c9;--acbg:#243b29;--soft:#1b2a1e;--shadow:0 8px 24px rgba(0,0,0,.18)}}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;transition:background .2s,color .2s}
+a{color:var(--ac);text-underline-offset:3px}
+a:hover{color:var(--ac-hover)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:4px}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
+nav .logo{font:600 1.1rem Georgia,serif;text-decoration:none;color:var(--fg)}
+nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:.92rem}
+nav ul a{text-decoration:none;color:var(--mut)}nav ul a:hover{color:var(--ac)}
+.btn{display:inline-block;padding:10px 18px;border-radius:7px;font-weight:650;font-size:.92rem;text-decoration:none;border:1px solid var(--ac);color:var(--ac);background:transparent;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.btn:hover{border-color:var(--ac-hover);color:var(--ac-hover);transform:translateY(-1px)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}.btn.p:hover{background:var(--ac-hover);border-color:var(--ac-hover);color:#fff}
+:root[data-theme="dark"] .btn.p{color:#122016}:root[data-theme="dark"] .btn.p:hover{color:#122016}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#122016}:root:not([data-theme="light"]) .btn.p:hover{color:#122016}}
+.btn.sm{padding:6px 12px;font-size:.85rem}
+.theme-toggle{font:inherit;cursor:pointer;padding:6px 10px;border-radius:7px;background:var(--acbg);border:1px solid var(--line);color:var(--fg);font-size:.85rem;font-weight:600}
+.theme-toggle:hover{border-color:var(--ac);color:var(--ac)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+#hero{border:0;padding:88px 0 76px;background:radial-gradient(ellipse at 88% 15%,var(--acbg) 0,transparent 42%)}
+.eyebrow{display:inline-block;color:var(--ac);background:var(--acbg);padding:5px 12px;border-radius:99px;font-weight:700;font-size:.85rem;margin:0 0 16px;letter-spacing:.02em}
+h1{font:600 clamp(2.2rem,5.4vw,3.6rem)/1.12 Georgia,"Times New Roman",serif;margin:0 0 20px;max-width:18em;letter-spacing:-.025em}
+h2{font:600 1.8rem Georgia,serif;margin:0 0 24px;letter-spacing:-.015em}
+h2:after{content:"";display:block;width:46px;height:3px;background:var(--ac);border-radius:5px;margin-top:12px}
+.lead{color:var(--mut);max-width:40em;margin:0 0 26px;font-size:1.05rem}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+#about .two p{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--ac);border-radius:10px;padding:22px;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .18s,border-color .18s}
+.card:hover{transform:translateY(-3px);border-color:var(--ac)}
+.card h3{margin:7px 0 4px;font-size:1.1rem;line-height:1.4}
+.card p{margin:8px 0;color:var(--mut);font-size:.94rem}
+.card .why{color:var(--fg)}
+.chip{display:inline-block;font-size:.75rem;padding:3px 10px;border-radius:99px;background:var(--acbg);color:var(--ac);margin:4px 4px 0 0;font-weight:650;border:1px solid color-mix(in srgb,var(--ac) 12%,transparent)}
+.st{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:750;text-transform:uppercase;letter-spacing:.06em;color:var(--ac);background:var(--acbg);padding:3px 8px;border-radius:5px}
+.st.dev{color:#8a5a10;background:#fbf0d9}:root[data-theme="dark"] .st.dev{color:#f0c978;background:#3a2d18}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .st.dev{color:#f0c978;background:#3a2d18}}
+.links{margin-top:auto;padding-top:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.note{font-size:.82rem;color:var(--mut)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.sk>div{border:1px solid var(--line);border-top:3px solid var(--line);border-radius:9px;padding:16px;background:var(--card)}
+.sk .core{border-top-color:var(--ac);background:linear-gradient(145deg,var(--acbg),var(--card) 75%)}
+.sk h3{margin:0 0 6px;font-size:1rem}.sk p{margin:0;color:var(--mut);font-size:.94rem}
+.sk small{color:var(--ac);font-weight:700}
+ul.plain{padding-left:22px;margin:0;color:var(--mut)}ul.plain li{margin:10px 0}
+#learning{background:var(--soft)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.9rem}
+footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{color:var(--ac)}
+@media (max-width:700px){.w{padding:0 16px}.two{grid-template-columns:1fr}section{padding:48px 0}#hero{padding:64px 0 54px}nav{gap:10px}nav ul{gap:10px;font-size:.86rem}.theme-toggle{margin-left:auto}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="w"><nav aria-label="Main">
+<a class="logo" href="#hero">Anshika Sahu</a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#learning">Learning</a></li><li><a href="#contact">Contact</a></li></ul>
+<!-- TODO: place your resume at /resume.pdf next to this file -->
+<a class="btn sm p" href="myresume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">☾ Dark mode</button>
+</nav></div></header>
+<main>
+<section id="hero"><div class="w">
+<p class="eyebrow">Python · Backend · AI applications</p>
+<h1>Building practical backend applications and AI-powered solutions with Python.</h1>
+<p class="lead">I’m a final-year B.Tech Computer Science and Information Technology student in Indore, looking for an entry-level software engineering role. I enjoy turning real problems into working applications and learning whatever the project needs.</p>
+<div class="cta"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a></div>
+</div></section>
+
+<section id="about"><div class="w"><h2>About</h2>
+<div class="two"><p class="lead" style="margin:0">I study at Chameli Devi Group of Institutions (CDGI), Indore, graduating in 2027. My focus is Python, backend development with Django and FastAPI, SQL, and applications that use LLM APIs.</p>
+<p class="lead" style="margin:0">I learn by building: I pick a real use case, ship a working version, then improve it. I’m comfortable picking up new tools and I’m happy to say when something is still a work in progress.</p></div>
+</div></section>
+
+<section id="skills"><div class="w"><h2>Technical skills</h2>
+<div class="sk">
+<div class="core"><h3>Programming <small>core</small></h3><p>Python, C++, SQL, basic Java</p></div>
+<div class="core"><h3>Backend <small>core</small></h3><p>Django, FastAPI, Flask, REST APIs, API integration, authentication and authorization fundamentals</p></div>
+<div class="core"><h3>Databases <small>core</small></h3><p>SQL, PostgreSQL, MySQL, SQLite</p></div>
+<div class="core"><h3>AI / ML / GenAI</h3><p>Machine learning fundamentals, NumPy, Pandas, Matplotlib, LLM APIs, Gemini API, LangChain, RAG, embeddings</p></div>
+<div><h3>Frontend</h3><p>HTML, CSS, JavaScript fundamentals, React, Bootstrap</p></div>
+<div><h3>Tools &amp; cloud</h3><p>Git, GitHub, VS Code, Linux, AWS and Google Cloud fundamentals, CI/CD fundamentals</p></div>
+</div></div></section>
+
+<section id="projects"><div class="w"><h2>Projects</h2>
+<div class="cards">
+
+<article class="card"><span class="st">Deployed</span><h3>CareAstra — Hospital Web Application</h3>
+<p>A hospital-focused web app with doctor and department information, appointment booking interfaces, symptom guidance, emergency information and patient-facing pages.</p>
+<p class="why"><b>Problem:</b> patients need one clear place to find doctors, book and get emergency info.</p>
+<div><span class="chip">JavaScript</span><span class="chip">Web app</span></div>
+<div class="links"><a class="btn sm" href="https://github.com/AnshikaSahu3464/careastra-hospital" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn sm p" href="https://careastra-hospital.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo</a></div></article>
+
+<article class="card"><span class="st">Completed</span><h3>Smart Canteen Management System</h3>
+<p>Django application with user login, menu browsing, cart, an order and payment flow, and admin tools for stock and expiry management.</p>
+<p class="why"><b>Problem:</b> canteens need ordering for users and stock/expiry control for staff.</p>
+<div><span class="chip">Python</span><span class="chip">Django</span><span class="chip">SQLite</span><span class="chip">HTML/CSS</span></div>
+<div class="links"><a class="btn sm" href="https://github.com/AnshikaSahu3464/canteen" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
+
+<article class="card"><span class="st">Machine learning</span><h3>Loan Approval Prediction</h3>
+<p>A machine-learning project that predicts loan approval from applicant data.</p>
+<div><span class="chip">Python</span><span class="chip">Machine learning</span></div>
+<div class="links"><span class="note">Repository link coming soon</span></div></article>
+
+<article class="card"><span class="st dev">Concept / in progress</span><h3>Indore Bus Tracker</h3>
+<p>A bus-tracking application concept for routes such as Rajwada to Vijay Nagar, aimed at live updates and transit information.</p>
+<div><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">WebSockets</span></div>
+<div class="links"><span class="note">Repository link coming soon</span></div></article>
+
+<article class="card"><span class="st dev">In development</span><h3>ExamGrid — Exam Seat Allocation</h3>
+<p>A planned system to assign students to exam rooms and seats using room capacity and configurable constraints like branch, section and floor.</p>
+<p class="note">Planned stack. Features are not yet complete.</p>
+<div><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span></div></article>
+</div>
+<p class="note" style="margin-top:18px">More work, including traffic-simulation and Gen-AI experiments, is on <a href="https://github.com/AnshikaSahu3464" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+</div></section>
+
+<section id="learning"><div class="w"><h2>Learning &amp; credentials</h2>
+<ul class="plain">
+<li>JPMorgan Chase Advanced Software Engineering job simulation on Forage (Java project repository on GitHub)</li>
+<li>B.Tech CSIT, Chameli Devi Group of Institutions, Indore — expected 2027</li>
+</ul>
+<!-- TODO: add verified certificates (AWS Academy ML Foundations, Google Cloud badges, Deloitte, Tata) with real links -->
+</div></section>
+
+<section id="contact"><div class="w"><h2>Contact</h2>
+<p class="lead">I’m open to entry-level Python, backend and AI roles. The best way to reach me is email.</p>
+<div class="cta"><a class="btn p" href="mailto:anshikasahu3464@gmail.com">anshikasahu3464@gmail.com</a>
+<a class="btn" href="https://in.linkedin.com/in/anshika-sahu-915b7b310" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="btn" href="https://github.com/AnshikaSahu3464" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="btn" href="myresume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a></div>
+</div></section>
+</main>
+<footer><div class="w"><span>© 2026 Anshika Sahu · Indore, India</span><span><a href="https://github.com/AnshikaSahu3464" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://in.linkedin.com/in/anshika-sahu-915b7b310" target="_blank" rel="noopener noreferrer">LinkedIn</a></span></div></footer>
+<script>
+(function(){
+  const root=document.documentElement;
+  const button=document.getElementById('themeToggle');
+  const saved=localStorage.getItem('anshika-theme');
+  if(saved==='light'||saved==='dark') root.setAttribute('data-theme',saved);
+  function updateButton(){
+    const dark=root.getAttribute('data-theme')==='dark' || (!root.hasAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    button.textContent=dark?'☀ Light mode':'☾ Dark mode';
+    button.setAttribute('aria-label',dark?'Switch to light theme':'Switch to dark theme');
+  }
+  button.addEventListener('click',function(){
+    const currentlyDark=root.getAttribute('data-theme')==='dark' || (!root.hasAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const next=currentlyDark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    localStorage.setItem('anshika-theme',next);
+    updateButton();
+  });
+  updateButton();
+})();
+</script>
+</body>
+</html>
